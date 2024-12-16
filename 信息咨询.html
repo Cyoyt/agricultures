@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>畜牧业农产品平台</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta charset="UTF-8">
+	<title>畜牧业农产品平台</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <div class="content">
     <div class="content-middle">
-        <h2 class="subtitle">延伸产品</h2>
-        <div class="iw">
-            <span class="title-box">衣服</span>
-            <div class="clear"></div>
-            <div class="iw-top ptop"></div>
+        <h2 class="subtitle">信息咨询（旅游业）</h2>
+        <ul class="tabtitle">
+            <li class="topradius3"><a href="mydetail3.html" target="proTab" class="topradius3 proTab">信息咨询(旅游业)流程</a></li>
+            <li class="tabtitle-link-box"></li>
+            <li class="topradius3"><a href="mydetail3.html" target="proTab" class="topradius3 proTab">用户注册登录</a></li>
+            <li class="tabtitle-link-box"></li>
+            <li class="topradius3"><a href="mydetail3.html" target="proTab" class="topradius3 proTab">明确需求</a></li>
+            <li class="tabtitle-link-box"></li>
+            <li class="topradius3"><a href="mydetail3.html" target="proTab" class="topradius3 proTab">信息搜索与筛选</a></li>
+            <li class="tabtitle-link-box"></li>
+            <li class="topradius3"><a href="mydetail3.html" target="proTab" class="topradius3 proTab">咨询与沟通</a></li>
+            <li class="tabtitle-link-box"></li>
+            <li class="topradius3"><a href="mydetail3.html" target="proTab" class="topradius3 proTab">在线客服、咨询窗口预订政策、行程安排</a></li>
+            <li class="tabtitle-link-box"></li>
+            <li class="topradius3"><a href="mydetail3.html" target="proTab" class="topradius3 proTab">方案定制与推荐</a></li>
+            <li class="tabtitle-link-box"></li>
+            <li class="topradius3"><a href="mydetail3.html" target="proTab" class="topradius3 proTab">预订与支付</a></li>
+            <li class="tabtitle-link-box"></li>
+            <li class="topradius3"><a href="mydetail3.html" target="proTab" class="topradius3 proTab">订单管理与服务跟进</a></li>
+            <li class="tabtitle-link-box"></li>
+            <li class="topradius3"><a href="mydetail3.html" target="proTab" class="topradius3 proTab">评价与反馈</a></li>
+        </ul>
+
+        <div id="mydetail">
+            <iframe src="mydetail3.html" id="proTab" name="proTab" width="100%" height="1330" frameborder="0" scrolling="no"></iframe>
         </div>
-        <div class="iw">
-            <span class="title-box">帐篷</span>
-            <div class="clear"></div>
-            <div class="iw-top ptop"></div>
-        </div>
-        <div class="iw">
-            <span class="title-box">毛衫</span>
-            <div class="clear"></div>
-            <div class="iw-top ptop"></div>
-        </div>
-        <div class="iw">
-            <span class="title-box">药材</span>
-            <div class="clear"></div>
-            <div class="iw-top ptop"></div>
-        </div>
+
     </div>
 </div>
 </body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="charts/dist/echarts.js"></script>
+<script>
+$(document).ready(function() {
+    $('.proTab').each(function(i){
+        $(this).click(function(){
+            $('.proTab').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+
+});
+</script>
 </html>
